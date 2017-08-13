@@ -299,6 +299,8 @@ namespace MapEditor
 
             CurrentCoordsLabel.Content = ChosenCellX.ToString() + ", " + ChosenCellY.ToString();
 
+            DrowMap();
+
             InitFields();
         }
 
@@ -359,6 +361,9 @@ namespace MapEditor
             image.Source = bi;
             image.HorizontalAlignment = HorizontalAlignment.Left;
             image.VerticalAlignment = VerticalAlignment.Top;
+
+            if (i == ChosenCellY && j == ChosenCellX)
+                image.Opacity = 0.2;
 
             Grid Buttongrid = new Grid();
 
