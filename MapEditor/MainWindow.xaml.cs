@@ -262,6 +262,13 @@ namespace MapEditor
                 MapCreation.Show();
                 InitFields();
             }
+
+            if (menuitemname == "Edit area")
+            {
+                AreaEdit AE = new AreaEdit();
+                AE.Show();
+                DrowMap();
+            }
         }
 
         private void MoveButton_Click(object sender, RoutedEventArgs e)

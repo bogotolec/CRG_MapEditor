@@ -14,3 +14,5 @@ C:\Users\Bogotolec\documents\visual studio 2015\Projects\MapEditor\MapEditor\obj
 C:\Users\Bogotolec\documents\visual studio 2015\Projects\MapEditor\MapEditor\obj\Debug\MapEditor.csproj.GenerateResource.Cache
 C:\Users\Bogotolec\documents\visual studio 2015\Projects\MapEditor\MapEditor\obj\Debug\MapEditor.exe
 C:\Users\Bogotolec\documents\visual studio 2015\Projects\MapEditor\MapEditor\obj\Debug\MapEditor.pdb
+C:\Users\Bogotolec\documents\visual studio 2015\Projects\MapEditor\MapEditor\obj\Debug\AreaEdit.g.cs
+C:\Users\Bogotolec\documents\visual studio 2015\Projects\MapEditor\MapEditor\obj\Debug\AreaEdit.baml

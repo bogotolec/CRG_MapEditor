@@ -13,6 +13,9 @@
                 <MenuItem Header="Open" Height="25" Click="MenuItem_Click"/>
                 <MenuItem Header="Save" Height="25" Click="MenuItem_Click"/>
             </MenuItem>
+            <MenuItem Header="Edit" Height="25">
+                <MenuItem Header="Edit area" Height="25" Click="MenuItem_Click"/>
+            </MenuItem>
         </Menu>
         <Grid Name="MapDisplay"  HorizontalAlignment="Left" Height="500" Margin="50,75,0,0" VerticalAlignment="Top" Width="500">
             <Grid.RowDefinitions>
