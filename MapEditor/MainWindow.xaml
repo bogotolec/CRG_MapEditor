@@ -1,0 +1,76 @@
+﻿<Window x:Class="MapEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MapEditor"
+        mc:Ignorable="d"
+        Title="MapEditor" Height="650" Width="820">
+    <Grid>
+        <Menu x:Name="menu" Height="25"  VerticalAlignment="Top">
+            <MenuItem Header="File" Height="25">
+                <MenuItem Header="New" Height="25" Click="MenuItem_Click"/>
+                <MenuItem Header="Open" Height="25" Click="MenuItem_Click"/>
+                <MenuItem Header="Save" Height="25" Click="MenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid Name="MapDisplay"  HorizontalAlignment="Left" Height="500" Margin="50,75,0,0" VerticalAlignment="Top" Width="500">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Button x:Name="MapUp" Click="MoveButton_Click" Content="^" HorizontalAlignment="Left" Margin="50,45,0,0" VerticalAlignment="Top" Width="500" Height="30"/>
+        <Button x:Name="MapLeft" Click="MoveButton_Click" Content="&lt;" HorizontalAlignment="Left" Margin="20,75,0,0" VerticalAlignment="Top" Width="30" Height="500"/>
+        <Button x:Name="MapDown" Click="MoveButton_Click" Content="v" HorizontalAlignment="Left" Margin="50,575,0,0" VerticalAlignment="Top" Width="500" Height="30"/>
+        <Button x:Name="MapRight" Click="MoveButton_Click" Content=">" HorizontalAlignment="Left" Margin="550,75,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.733,0.95" Height="500"/>
+        <TextBox x:Name="CellMessage" HorizontalAlignment="Left" Height="150" Margin="585,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="CellMessageLabel" Content="Message of cell (russian):" HorizontalAlignment="Left" Margin="585,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,0.962"/>
+        <ComboBox x:Name="Landscape" HorizontalAlignment="Left" Height="25" Margin="659,410,0,0" VerticalAlignment="Top" Width="130">
+            <TextBlock>Field</TextBlock>
+            <TextBlock>Desert</TextBlock>
+            <TextBlock>Water</TextBlock>
+            <TextBlock>Forest</TextBlock>
+            <TextBlock>Bricks</TextBlock>
+            <TextBlock>Lava</TextBlock>
+        </ComboBox>
+        <Label x:Name="LandScapeLabel" Content="Landscape:" HorizontalAlignment="Left" Margin="589,410,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="IsPassableCheckBox" Content="Is passable?" HorizontalAlignment="Left" Margin="706,440,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="IsTaskableCheckbox" Content="Has task?" HorizontalAlignment="Left" Margin="706,460,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TaskIdTextbox" IsEnabled="False" HorizontalAlignment="Left" Height="20" Margin="643,455,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
+        <Label x:Name="TaskIdLabel" Content="Task id:" HorizontalAlignment="Left" Margin="595,452,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.579,0.462"/>
+        <CheckBox x:Name="IsTeleportCheckbox" Content="Is Teleport?" HorizontalAlignment="Left" Margin="706,480,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TpCoordX" IsEnabled="False" HorizontalAlignment="Left" Height="20" Margin="643,497,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="TpCoordY" IsEnabled="False" HorizontalAlignment="Left" Height="20" Margin="643,517,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
+        <Label x:Name="TpCoordsLabel" Content="Teleport coords" HorizontalAlignment="Left" Margin="595,474,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="XLabel" Content="X:" HorizontalAlignment="Left" Margin="618,493,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="YLabel" Content="Y:" HorizontalAlignment="Left" Margin="619,511,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="CellMessageLabelEn" Content="Message of cell (english):" HorizontalAlignment="Left" Margin="585,225,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,0.962"/>
+        <TextBox x:Name="CellMessageEn" HorizontalAlignment="Left" Height="150" Margin="589,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <ProgressBar x:Name="Progressbar" Visibility="Hidden" Minimum="0" Maximum="100" HorizontalAlignment="Left" Height="20" Margin="589,30,0,0" VerticalAlignment="Top" Width="196"/>
+        <Label x:Name="CurrentCoordsStaticLabel" Content="Current cell coords (x, y):" HorizontalAlignment="Left" Margin="600,557,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.289,0.115"/>
+        <Label x:Name="CurrentCoordsLabel" Content="0, 0" HorizontalAlignment="Left" Margin="740,557,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.808"/>
+    </Grid>
+
+
+</Window>

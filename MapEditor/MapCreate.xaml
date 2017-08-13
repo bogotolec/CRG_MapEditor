@@ -1,0 +1,29 @@
+﻿<Window x:Class="MapEditor.MapCreate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MapEditor"
+        mc:Ignorable="d"
+        Title="New map" Height="200" Width="200"
+        MaxHeight="200" MaxWidth="200"
+        MinHeight="200" MinWidth="200"
+        ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="AskingForHeight" Content="Height: " HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="AskingForWidth" Content="Width: " HorizontalAlignment="Left" Margin="25,50,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="AskingForLandscape" Content="Landscape: " HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="HeightField" HorizontalAlignment="Left" Height="25" Margin="80,25,0,0" TextWrapping="NoWrap" Text="1024" VerticalAlignment="Top" Width="100" FontSize="16"/>
+        <TextBox x:Name="WidthField" HorizontalAlignment="Left" Height="25" Margin="80,50,0,0" TextWrapping="NoWrap" Text="1024" VerticalAlignment="Top" Width="100" FontSize="16"/>
+        <ComboBox x:Name="Landscape" HorizontalAlignment="Left" Height="25" Margin="80,75,0,0" VerticalAlignment="Top" Width="100">
+            <TextBlock>Field</TextBlock>
+            <TextBlock>Desert</TextBlock>
+            <TextBlock>Water</TextBlock>
+            <TextBlock>Forest</TextBlock>
+            <TextBlock>Bricks</TextBlock>
+            <TextBlock>Lava</TextBlock>
+        </ComboBox>
+        <Button x:Name="Create" Click="Create_Click"  Content="Create" HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.787,0.55"/>
+
+    </Grid>
+</Window>
