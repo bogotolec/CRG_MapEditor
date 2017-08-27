@@ -79,6 +79,9 @@ namespace MapEditor
                 case "Lava":
                     App.UsedMap[ChosenCellY, ChosenCellX].LandscapeId = MapEditor.Landscape.Lava;
                     break;
+                case "Sign":
+                    App.UsedMap[ChosenCellY, ChosenCellX].LandscapeId = MapEditor.Landscape.Sign;
+                    break;
             }
             
             DrawCell(ChosenCellY, ChosenCellX);
@@ -181,6 +184,9 @@ namespace MapEditor
                     break;
                 case MapEditor.Landscape.Lava:
                     Landscape.SelectedIndex = 5;
+                    break;
+                case MapEditor.Landscape.Sign:
+                    Landscape.SelectedIndex = 6;
                     break;
             }
         }
@@ -352,6 +358,9 @@ namespace MapEditor
                     break;
                 case MapEditor.Landscape.Lava:
                     uri = new Uri(dir + @"\Textures\Lava.png");
+                    break;
+                case MapEditor.Landscape.Sign:
+                    uri = new Uri(dir + @"\Textures\Sign.png");
                     break;
                 default:
                     uri = new Uri(dir + @"\Textures\Lava.png");

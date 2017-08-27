@@ -68,6 +68,9 @@ namespace MapEditor
                 case "Bricks":
                     ls = MapEditor.Landscape.Bricks;
                     break;
+                case "Sign":
+                    ls = MapEditor.Landscape.Sign;
+                    break;
                 default:
                     ls = MapEditor.Landscape.None;
                     break;

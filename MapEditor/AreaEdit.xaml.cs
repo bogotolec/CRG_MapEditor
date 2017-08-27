@@ -73,6 +73,9 @@ namespace MapEditor
                 case "Lava":
                     land = MapEditor.Landscape.Lava;
                     break;
+                case "Sign":
+                    land = MapEditor.Landscape.Sign;
+                    break;
             }
 
             for (int i = yb; i <= ye; i++)

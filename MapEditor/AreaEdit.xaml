@@ -21,6 +21,7 @@
             <TextBlock>Forest</TextBlock>
             <TextBlock>Bricks</TextBlock>
             <TextBlock>Lava</TextBlock>
+            <TextBlock>Sign</TextBlock>
         </ComboBox>
         <CheckBox x:Name="IsPassableCheckbox" Height="25" Content="Is passable?" HorizontalAlignment="Left" Margin="257,195,0,0" VerticalAlignment="Top"/>
         <Button x:Name="EditButton" Content="EDIT!" Click="Button_Click" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="225" Height="34"/>

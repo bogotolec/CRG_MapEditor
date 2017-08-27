@@ -22,6 +22,7 @@
             <TextBlock>Forest</TextBlock>
             <TextBlock>Bricks</TextBlock>
             <TextBlock>Lava</TextBlock>
+            <TextBlock>Sign</TextBlock>
         </ComboBox>
         <Button x:Name="Create" Click="Create_Click"  Content="Create" HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.787,0.55"/>
 

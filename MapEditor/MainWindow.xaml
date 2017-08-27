@@ -56,6 +56,7 @@
             <TextBlock>Forest</TextBlock>
             <TextBlock>Bricks</TextBlock>
             <TextBlock>Lava</TextBlock>
+            <TextBlock>Sign</TextBlock>
         </ComboBox>
         <Label x:Name="LandScapeLabel" Content="Landscape:" HorizontalAlignment="Left" Margin="589,410,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="IsPassableCheckBox" Content="Is passable?" HorizontalAlignment="Left" Margin="706,440,0,0" VerticalAlignment="Top"/>
