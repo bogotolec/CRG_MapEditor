@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MapEditor 
 {
-    public enum Landscape { None, Field, Desert, Forest, Water, Bricks, Lava }
+    public enum Landscape { None, Field, Desert, Forest, Water, Bricks, Lava, Sign }
 
     public class Cell
     {
@@ -47,6 +47,9 @@ namespace MapEditor
                     break;
                 case Landscape.Lava:
                     lnd = "Lv";
+                    break;
+                case Landscape.Sign:
+                    lnd = "Sg";
                     break;
                 default:
                     lnd = "";
@@ -96,6 +99,9 @@ namespace MapEditor
                             LandscapeId = Landscape.Bricks;
                             break;
                         case "Lv":
+                            LandscapeId = Landscape.Lava;
+                            break;
+                        case "Sg":
                             LandscapeId = Landscape.Lava;
                             break;
                         default:
